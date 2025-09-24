@@ -1,0 +1,27 @@
+<ion-content [fullscreen]="true" class="ion-background-color">
+  <div class="page-container">
+    <!-- Logo -->
+    <div class="logo-container">
+      <img src="assets/wake-app.png" alt="Wake App" />
+    </div>
+
+    <!-- Botones -->
+    <div class="buttons-container">
+      <ion-button expand="block" class="app-button" (click)="goToAlarms()">
+        Alarmas
+      </ion-button>
+      
+      <ion-button expand="block" class="app-button" (click)="goToTasks()">
+        Tareas
+      </ion-button>
+      
+      <ion-button expand="block" class="app-button" (click)="goToStatistics()">
+        Estadísticas
+      </ion-button>
+
+      <ion-button expand="block" class="app-button" (click)="goToSettings()">
+        Configuración
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

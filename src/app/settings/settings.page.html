@@ -1,0 +1,31 @@
+<ion-content [fullscreen]="true">
+  <div class="title-container">
+    <h1 class="app-title">AJUSTES</h1>
+  </div>
+
+  <div class="page-container">
+  <div class="cards-container">
+    <app-card
+      letter="U"
+      title="Usuario"
+      subtitle="Cuenta vinculada">
+    </app-card>
+
+    <app-card
+      letter="P"
+      title="Página de soporte"
+      subtitle="Link a la página de soporte">
+    </app-card>
+  </div>
+
+  <div class="buttons-container">
+    <ion-button expand="block" class="app-button" (click)="goToMainView()">
+      Vincular Cuenta
+    </ion-button>
+
+    <ion-button expand="block" class="app-button" (click)="goToMainView()">
+      Cancelar
+    </ion-button>
+  </div>
+</div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "wake-app-mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

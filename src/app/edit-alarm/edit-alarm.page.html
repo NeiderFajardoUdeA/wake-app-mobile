@@ -1,0 +1,127 @@
+<ion-content [fullscreen]="true">
+  <div class="title-container">
+    <h1 class="app-title">EDITAR <br /> ALARMA</h1>
+  </div>
+  <div>
+      <!-- Activa -->
+      <div class="toggle-container">
+        <ion-toggle [(ngModel)]="isActive"></ion-toggle>
+        <span class="toggle-label">Activa</span>
+      </div>
+
+  <!-- Nombre -->
+  <div class="form-group">
+    <ion-label class="form-label">Nombre:</ion-label>
+    <ion-input [(ngModel)]="alarm.name" placeholder="Nombre de la alarma"></ion-input>
+  </div>
+
+  <!-- Hora de Inicio -->
+  <div class="form-group">
+    <div class="time-picker">
+      <input type="text" class="time-input" value="07" maxlength="2">
+      <span class="separator">:</span>
+      <input type="text" class="time-input" value="00" maxlength="2">
+    
+      <div class="ampm-toggle">
+        <button class="am active">AM</button>
+        <button class="pm">PM</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Descripción -->
+  <div class="form-group">
+    <ion-label class="form-label">Descripción:</ion-label>
+    <ion-textarea
+      auto-grow="true"
+      [(ngModel)]="alarm.description"
+      placeholder="Escribe una descripción">
+    </ion-textarea>
+  </div>
+
+  <!-- Recurrente -->
+  <div class="form-group">
+    <ion-label class="form-label">Recurrente:</ion-label>
+    <div class="days-container">
+      <ion-item lines="none" *ngFor="let day of days">
+        <ion-checkbox
+          slot="start"
+          [(ngModel)]="day.selected">
+        </ion-checkbox>
+        <ion-label>{{ day.label }}</ion-label>
+      </ion-item>
+    </div>
+  </div>
+
+  <div class="form-section">
+    <label class="form-label">Modo de Apagado:</label>
+    <div class="form-box">
+      <label class="form-option">
+        <input type="radio" name="modo" value="fisica">
+        Actividad Física
+      </label>
+      <label class="form-option">
+        <input type="radio" name="modo" value="voz">
+        Comando de Voz
+      </label>
+      <label class="form-option">
+        <input type="radio" name="modo" value="normal">
+        Normal
+      </label>
+    </div>
+  </div>
+  
+  <div class="form-section">
+    <label class="form-label">Seguimiento de Tareas:</label>
+    <div class="form-box">
+      <label class="form-option">
+        <input type="radio" name="tareas" value="si">
+        Si
+      </label>
+      <label class="form-option">
+        <input type="radio" name="tareas" value="no">
+        No
+      </label>
+    </div>
+  </div>
+  
+  <div class="form-section">
+    <label class="form-label">Fecha Activación:</label>
+    <input type="text" class="form-input" value="14/09/2025" readonly>
+  </div>
+
+  <div class="form-section">
+    <label class="form-label">Fecha Suspensión:</label>
+    <input type="text" class="form-input" value="14/09/2025" readonly>
+  </div>
+
+  <div class="title-container">
+    <h1 class="app-title">TAREAS</h1>
+  </div>
+
+  <div class="buttons-container">
+    <ion-button expand="block" class="app-button" (click)="goToAddTaskPage()">Agregar Tareas</ion-button>
+    <ion-button expand="block" fill="outline" class="app-button">Eliminar Tarea</ion-button>
+  </div>
+
+  <div class="cards-container">
+    <app-card
+        letter=""
+        title="Perparar Desayuno"
+        subtitle="00:45">
+      </app-card>
+  
+      <app-card
+        letter=""
+        title="Llevar niños al cole"
+        subtitle="01:10">
+      </app-card>
+  </div>
+  <!-- Botones -->
+  <div class="buttons-container">
+    <ion-button expand="block" class="app-button" (click)="goToAlarmsPage()">Guardar</ion-button>
+    <ion-button expand="block" class="app-button" (click)="goToAlarmsPage()">Eliminar</ion-button>
+    <ion-button expand="block" fill="outline" class="app-button" (click)="goToAlarmsPage()">Cancelar</ion-button>
+  </div>
+  </div>
+</ion-content>

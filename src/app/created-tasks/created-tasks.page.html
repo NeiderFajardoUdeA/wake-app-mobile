@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true">
+  <div class="title-container">
+    <h1 class="app-title">TAREAS <br /> CREADAS</h1>
+  </div>
+
+  <!-- Cards -->
+  <div class="cards-container">
+    <app-card
+        letter=""
+        title="Perparar Desayuno"
+        subtitle="00:45">
+      </app-card>
+  
+      <app-card
+        letter=""
+        title="Llevar niños al cole"
+        subtitle="01:10">
+      </app-card>
+  </div>
+
+  <!-- Botones -->
+  <div class="buttons-container">
+    <ion-button expand="block" class="app-button" (click)="goToCreateAlarm()">Volver</ion-button>
+  </div>
+</ion-content>

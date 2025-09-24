@@ -1,0 +1,35 @@
+<ion-content [fullscreen]="true" scrollY="false">
+  <h1 class="app-title">ALARMAS</h1>
+<div class="page-container">
+
+  <div class="cards-container">
+    <app-card (click)="goToEditAlarm()"
+      letter="T"
+      title="Trabajo"
+      subtitle="Lunes a Viernes">
+    </app-card>
+
+    <app-card (click)="goToEditAlarm()"
+      letter="G"
+      title="Gimnasio"
+      subtitle="Lunes, Miércoles, Viernes">
+    </app-card>
+
+    <app-card (click)="goToEditAlarm()"
+      letter="C"
+      title="Compras"
+      subtitle="Domingos">
+    </app-card>
+  </div>
+
+  <div class="buttons-container">
+    <ion-button expand="block" class="app-button" (click)="goToCreateAlarm()">
+      Crear Alarma
+    </ion-button>
+
+    <ion-button expand="block" class="app-button" (click)="goToMainView()">
+      Volver
+    </ion-button>
+  </div>
+</div>
+</ion-content>

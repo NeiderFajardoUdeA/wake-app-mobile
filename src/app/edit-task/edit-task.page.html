@@ -1,0 +1,41 @@
+<ion-content [fullscreen]="true">
+  <div class="title-container">
+    <h1 class="app-title">EDITAR <br /> TAREA</h1>
+  </div>
+
+    <!-- Nombre -->
+    <div class="form-group">
+      <ion-label class="form-label">Nombre:</ion-label>
+      <ion-input [(ngModel)]="task.name" placeholder="Nombre de la tarea"></ion-input>
+    </div>
+
+      <!-- Hora de Inicio -->
+  <div class="form-group">
+    <ion-label class="form-label">Duración:</ion-label>
+    <div class="time-picker">
+      <input type="text" class="time-input" value="07" maxlength="2">
+      <span class="separator">:</span>
+      <input type="text" class="time-input" value="00" maxlength="2">
+    
+      <div class="ampm-toggle">
+        <button class="am active">AM</button>
+        <button class="pm">PM</button>
+      </div>
+    </div>
+  </div>
+    <!-- Descripción -->
+    <div class="form-group">
+      <ion-label class="form-label">Descripción:</ion-label>
+      <ion-textarea
+        auto-grow="true"
+        [(ngModel)]="task.description"
+        placeholder="Escribe una descripción">
+      </ion-textarea>
+    </div>
+    <!-- Botones -->
+    <div class="buttons-container">
+      <ion-button expand="block" fill="outline" class="app-button" (click)="goToTasksPage()">Guardar</ion-button>
+      <ion-button expand="block" fill="outline" class="app-button" (click)="goToTasksPage()">Eliminar Tarea</ion-button>
+      <ion-button expand="block" fill="outline" class="app-button" (click)="goToTasksPage()">Cancelar</ion-button>
+    </div>
+</ion-content>

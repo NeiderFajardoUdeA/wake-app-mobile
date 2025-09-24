@@ -1,0 +1,29 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 3rem 1rem;
+  }
+  
+
+.logo-container {
+    display: flex;
+    justify-content: center;   /* centra horizontal */
+    margin-top: 25%;           /* sube o baja la imagen (ajusta el valor a tu gusto) */
+  }
+  
+  .logo-container img {
+    max-width: 394px;
+    height: auto;
+  }
+
+
+  .buttons-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;        /* espacio entre botones */
+    width: 90%;
+    max-width: 350px; /* ancho máximo de los botones */
+  }

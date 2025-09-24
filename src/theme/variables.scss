@@ -1,0 +1,30 @@
+:root {
+    --ion-background-color: linear-gradient(
+      to bottom,
+      #F3DBE9 0%,
+      #EFF4F8 40%,
+      #C0D3E4 100%
+    );
+  }
+  
+  :root[mode=ios],
+  :root[mode=md] {
+    --ion-background-color: linear-gradient(
+      to bottom,
+      #F3DBE9 0%,
+      #EFF4F8 40%,
+      #C0D3E4 100%
+    );
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ion-background-color: linear-gradient(
+        to bottom,
+        #F3DBE9 0%,
+        #EFF4F8 40%,
+        #C0D3E4 100%
+      );
+    }
+  }
+  

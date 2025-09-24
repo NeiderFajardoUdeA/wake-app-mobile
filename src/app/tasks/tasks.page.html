@@ -1,0 +1,41 @@
+<ion-content [fullscreen]="true" scrollY="false">
+  <h1 class="app-title">TAREAS</h1>
+  <div class="page-container">
+
+    <div class="cards-container">
+      <app-card (click)="goToEditTask()"
+        letter=""
+        title="Perparar Desayuno"
+        subtitle="00:45">
+      </app-card>
+  
+      <app-card (click)="goToEditTask()"
+        letter=""
+        title="Llevar niños al cole"
+        subtitle="01:10">
+      </app-card>
+  
+      <app-card (click)="goToEditTask()"
+        letter=""
+        title="Lavar Platos"
+        subtitle="00:40">
+      </app-card>
+
+      <app-card (click)="goToEditTask()"
+        letter=""
+        title="Pasear a Flofi"
+        subtitle="01:15">
+      </app-card>
+    </div>
+  
+    <div class="buttons-container">
+      <ion-button expand="block" class="app-button" (click)="goToCreateTask()">
+        Crear Tarea
+      </ion-button>
+  
+      <ion-button expand="block" class="app-button" (click)="goToMainView()">
+        Volver
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

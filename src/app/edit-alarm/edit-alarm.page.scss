@@ -1,0 +1,309 @@
+.app-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;       /* ~29px si root=16px */
+    color: #465375;          /* mismo azul de botones */
+    text-align: center;
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+
+  .title-container {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 2rem 0;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .form-label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #465375;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .days-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem 1rem;
+    border: 1px solid #465375;
+    border-radius: 6px;
+    padding: 0.8rem;
+  }
+  
+  .buttons-container {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #465375;
+  }
+  
+  /* Etiquetas */
+  .form-label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #465375;
+    margin: 0.5rem 0;
+    display: block;
+  }
+  
+ion-label {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+}
+
+  /* Input y Textarea */
+  ion-input,
+  ion-textarea {
+    --background: transparent;
+    --color: #000;
+    --padding-start: 0rem;
+    --padding-end: 0rem;
+    --padding-top: 0.3rem;
+    --padding-bottom: 0.3rem;
+    font-size: 1rem;
+    font-family: inherit;
+    margin-top: 0rem;
+    border: 1px solid #465375;
+    border-radius: 6px;
+}
+  
+  /* Textarea ajuste */
+  ion-textarea {
+    min-height: 60px;
+  }
+  
+  /* Toggle */
+  .toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  /* Toggle personalizado */
+  ion-toggle {
+    --handle-background: #FFFFFF;
+    --background: #FF9500;              
+    --track-background: #707070;      /* fondo OFF gris */
+    --track-background-checked: #FF9500;
+    --handle-width: 20px;
+    --handle-height: 20px;
+    --width: 40px;
+    --height: 20px;
+    --border-radius: 9999px;
+  }
+  
+  /* Texto */
+  .toggle-label {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000;
+  }
+
+
+  ion-item {
+    --background: transparent;
+    --inner-padding-end: 0;
+    --padding-start: 0;
+    --padding-end: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #465375;
+  }
+  
+  /* Datetime (selector de hora) */
+  .time-picker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 10px 15px;
+    gap: 10px;
+    background: transparent;
+  }
+  
+  /* Inputs de hora */
+  .time-input {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    text-align: center;
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .separator {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* Botones AM/PM */
+  .ampm-toggle {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .ampm-toggle button {
+    border: none;
+    padding: 8px 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  /* Colores personalizados */
+  .ampm-toggle .am {
+    background-color: #f7931a; /* naranja */
+  }
+  
+  .ampm-toggle .pm {
+    background-color: #8b90b6; /* gris azulado */
+  }
+  
+  /* Botón seleccionado */
+  .ampm-toggle .active {
+    opacity: 1;
+  }
+  
+  .ampm-toggle button:not(.active) {
+    opacity: 0.7;
+  }
+  
+  /* Checkboxes */
+  ion-item ion-checkbox {
+    --size: 18px;
+    --checkbox-background: #fff;
+    --checkbox-background-checked: #465375;
+    --border-color: #465375;
+    --checkmark-color: #fff;
+    --border-radius: 0;
+  }
+  
+  .days-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem 1rem;
+    border: 1px solid #465375;
+    border-radius: 6px;
+    padding: 0.8rem;
+  }
+  
+  .days-container ion-item {
+    --background: transparent;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #000;
+  }
+
+
+  body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #eaf1f9;
+    padding: 20px;
+  }
+  
+  /* Sección general */
+  .form-section {
+    margin-bottom: 20px;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+  
+  /* Etiquetas de cada sección */
+  .form-label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #2a3350;
+  }
+  
+  /* Caja que agrupa las opciones */
+  .form-box {
+    border: 1px solid #465375;
+    border-radius: 8px;
+    padding: 10px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  /* Opciones individuales */
+  .form-option {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #000;
+    gap: 6px;
+  }
+  
+  /* Input de fecha */
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #465375;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: transparent;
+    color: #000;
+  }
+
+  input[type="radio"] {
+    accent-color: #465375;
+    --background: transparent;
+    --border-color: #465375;
+  }
+    
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+    
