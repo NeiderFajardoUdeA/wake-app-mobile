@@ -8,6 +8,8 @@
 Aplicación móvil desarrollada con Ionic y Angular para el seguimiento de hábitos de sueño y despertar.
 
 ## Tecnologías Utilizadas
+- **Node.js**: 20.19.5 o 22.12.0
+
 
 - **Ionic Framework**: ^8.0.0 [Instalar Ionic CLI:](https://ionicframework.com/docs/intro/cli)
 ```bash
