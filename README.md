@@ -1,8 +1,4 @@
-# Wake App Mobile
-
-# 🚀 Mi App con Ionic + Angular
-
-# 🚀 Mi App con Ionic + Angular
+# 🚀 Wake App Mobile
 
 [![Ionic](https://img.shields.io/badge/Ionic-%E2%89%A58.0.0-3880FF?logo=ionic&logoColor=white)](https://ionicframework.com/)
 [![Angular](https://img.shields.io/badge/Angular-%E2%89%A520.0.0-DD0031?logo=angular&logoColor=white)](https://angular.io/)
