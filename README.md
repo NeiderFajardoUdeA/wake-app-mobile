@@ -32,6 +32,8 @@ npm install -g rxjs
 
 ## Instrucciones de Instalación y Ejecución
 
+### Importante: Esta aplicación puede ser visualizada en versión móvil o web. Sin embargo, fue pensada y diseñada para que sea vista en un dispositivo móvil, por lo que se recomienda visualizarla con las dimensiones de un dispositivo móvil.
+
 1. Instalar dependencias:
    ```bash
    npm install
